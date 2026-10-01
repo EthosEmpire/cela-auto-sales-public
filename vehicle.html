@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vehicle Details | Cela Auto Sales LLC</title>
+  <meta name="description" content="Vehicle details from Cela Auto Sales LLC, a father-and-son owned used vehicle dealership in Nampa, Idaho.">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cela Auto Sales LLC">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Vehicle Details | Cela Auto Sales LLC">
+  <meta property="og:description" content="Vehicle details from Cela Auto Sales LLC, a father-and-son owned used vehicle dealership in Nampa, Idaho.">
+  <meta property="og:image" content="images/logo/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cela Auto Sales LLC logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="images/logo/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo/icon-192.png">
+  <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
+  <script src="js/app.js" defer></script>
+  <script src="js/vehicles.js" defer></script>
+  <script src="js/supabase-config.js" defer></script>
+  <script src="js/supabase-source.js" defer></script>
+  <script src="js/vehicle-detail.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <section class="topbar" aria-label="Dealership contact information">
+    <div class="container topbar__inner">
+      <a class="topbar__item" href="https://www.google.com/maps/dir/?api=1&amp;destination=423+N+Franklin+Blvd%2C+Nampa%2C+ID" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>423 N Franklin Blvd, Nampa, Idaho<span class="visually-hidden"> (opens in a new tab)</span></a>
+      <div class="topbar__links">
+        <a href="mailto:bcela@netzero.net"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>bcela@netzero.net</a>
+        <a href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </section>
+
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <picture>
+            <source srcset="images/logo/cela-logo.webp" type="image/webp">
+            <img src="images/logo/cela-logo.png" width="632" height="313" alt="Cela Auto Sales LLC home">
+          </picture>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--primary header-call" href="tel:+12087131487">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="header-call__short">Call<span class="visually-hidden"> (208) 713-1487</span></span><span class="header-call__full">Call (208) 713-1487</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="nav-toggle__bars"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu__inner">
+        <nav aria-label="Mobile">
+          <ul class="mobile-menu__list">
+            <li><a href="index.html">Home<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            <li><a href="inventory.html">Inventory<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            <li><a href="about.html">About Us<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            <li><a href="contact.html">Contact<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__actions">
+          <a class="btn btn--primary btn--lg" href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 713-1487</a>
+          <a class="btn btn--dark" href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
+        <p class="mobile-menu__address"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>423 N Franklin Blvd<br>Nampa, Idaho</span></p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="vehicle-page" data-vehicle-page data-state="loading">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><span aria-current="page" data-slot="crumb">Vehicle Details</span></li>
+        </ol>
+      </nav>
+
+      <div class="vehicle-loading" role="status">
+        <p class="loading-state">Loading vehicle details&hellip;</p>
+      </div>
+
+      <section class="vehicle-missing" aria-labelledby="missing-title">
+        <div class="empty-state">
+          <div class="empty-state__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 17H3v-5l2.2-5.2A2 2 0 0 1 7.04 5.6h9.92a2 2 0 0 1 1.84 1.2L21 12v5h-2"/><path d="M3 12h18"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></svg></div>
+          <h1 id="missing-title">Vehicle not found or no longer available.</h1>
+          <p>This vehicle may have been sold or removed from our online inventory. Browse our current inventory or call Cela Auto Sales &mdash; we&rsquo;re happy to help.</p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="inventory.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 17H3v-5l2.2-5.2A2 2 0 0 1 7.04 5.6h9.92a2 2 0 0 1 1.84 1.2L21 12v5h-2"/><path d="M3 12h18"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></svg>Return to Inventory</a>
+            <a class="btn btn--outline" href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Cela Auto Sales</a>
+          </div>
+        </div>
+      </section>
+
+      <article class="vehicle-view" aria-labelledby="vehicle-title">
+        <div class="vehicle-layout">
+          <section class="gallery" data-gallery aria-label="Vehicle photos">
+            <div class="gallery__stage" data-gallery-stage>
+              <img class="gallery__main" data-gallery-main alt="" width="1200" height="900" hidden>
+              <div data-gallery-placeholder hidden></div>
+              <span class="gallery__status" data-slot="status-badge"></span>
+              <button type="button" class="gallery__nav gallery__nav--prev" data-gallery-prev aria-label="Previous photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+              <button type="button" class="gallery__nav gallery__nav--next" data-gallery-next aria-label="Next photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
+              <span class="gallery__counter" data-gallery-counter aria-live="polite"></span>
+              <button type="button" class="gallery__expand" data-gallery-expand><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Full screen</button>
+            </div>
+            <ul class="gallery__thumbs" data-gallery-thumbs aria-label="Photo thumbnails"></ul>
+          </section>
+
+          <div class="vehicle-summary">
+            <div>
+              <h1 id="vehicle-title" data-slot="title">Vehicle</h1>
+              <p class="vehicle-summary__trim" data-slot="trim" hidden></p>
+            </div>
+            <p class="vehicle-summary__price" data-slot="price"></p>
+            <p class="status-notice" data-slot="status-notice" hidden></p>
+            <dl class="key-specs" data-slot="key-specs"></dl>
+            <div class="vehicle-actions">
+              <a class="btn btn--primary btn--lg btn--block" href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 713-1487</a>
+              <a class="btn btn--outline btn--block" href="contact.html" data-contact-link><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Contact Us About This Vehicle</a>
+              <div class="vehicle-actions__row">
+                <a class="btn btn--dark" href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+                <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=423+N+Franklin+Blvd%2C+Nampa%2C+ID" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Directions<span class="visually-hidden"> (opens in a new tab)</span></a>
+                <button type="button" class="btn btn--dark" data-share><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>Share</button>
+              </div>
+              <p class="share-feedback" data-share-feedback aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="vehicle-details">
+            <section class="card detail-block" data-block="description" aria-labelledby="description-title">
+              <h2 id="description-title">Vehicle Description</h2>
+              <p class="vehicle-description" data-slot="description"></p>
+            </section>
+            <section class="card detail-block" aria-labelledby="specs-title">
+              <h2 id="specs-title">Specifications</h2>
+              <dl class="spec-table spec-table--2col" data-slot="specs"></dl>
+            </section>
+            <section class="card detail-block" data-block="features" aria-labelledby="features-title">
+              <h2 id="features-title">Features</h2>
+              <ul class="feature-list" data-slot="features"></ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="mobile-cta" data-mobile-cta hidden>
+      <a class="btn btn--primary" href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+      <a class="btn btn--outline" href="contact.html" data-contact-link><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Contact Us</a>
+    </div>
+
+    <dialog class="lightbox" data-lightbox aria-label="Vehicle photo viewer">
+      <div class="lightbox__inner">
+        <p class="lightbox__counter" data-lightbox-counter></p>
+        <img class="lightbox__img" data-lightbox-img alt="">
+        <button type="button" class="icon-btn lightbox__close" data-lightbox-close aria-label="Close photo viewer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+        <button type="button" class="gallery__nav gallery__nav--prev" data-lightbox-prev aria-label="Previous photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button type="button" class="gallery__nav gallery__nav--next" data-lightbox-next aria-label="Next photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <picture>
+          <source srcset="images/logo/cela-logo.webp" type="image/webp">
+          <img src="images/logo/cela-logo.png" width="632" height="313" alt="Cela Auto Sales LLC" loading="lazy" decoding="async">
+        </picture>
+        <p>Father-and-son owned and operated in Nampa, Idaho. Reliable used vehicles, personalized service, and a no-pressure buying experience.</p>
+        <a class="social-link" href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Follow us on Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+
+      <nav aria-labelledby="footer-nav-title">
+        <h2 id="footer-nav-title">Navigation</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contact</h2>
+        <ul class="footer-links">
+          <li><a href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(208) 713-1487</a></li>
+          <li><a href="mailto:bcela@netzero.net"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>bcela@netzero.net</a></li>
+          <li><a href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Visit</h2>
+        <address class="footer-address"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Cela Auto Sales LLC<br>423 N Franklin Blvd<br>Nampa, Idaho</span></address>
+        <ul class="footer-links">
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=423+N+Franklin+Blvd%2C+Nampa%2C+ID" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Get Directions<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+        <p>Contact us for current availability and dealership hours.</p>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Cela Auto Sales LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

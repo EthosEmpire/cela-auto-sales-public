@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cela Auto Sales Inventory | Used Cars in Nampa, Idaho</title>
+  <meta name="description" content="Browse used vehicles for sale at Cela Auto Sales LLC in Nampa, Idaho. Search by make, model, year, price, and mileage, or call (208) 713-1487.">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cela Auto Sales LLC">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Cela Auto Sales Inventory | Used Cars in Nampa, Idaho">
+  <meta property="og:description" content="Browse used vehicles for sale at Cela Auto Sales LLC in Nampa, Idaho. Search by make, model, year, price, and mileage, or call (208) 713-1487.">
+  <meta property="og:image" content="images/logo/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cela Auto Sales LLC logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="images/logo/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo/icon-192.png">
+  <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
+  <script src="js/app.js" defer></script>
+  <script src="js/vehicles.js" defer></script>
+  <script src="js/supabase-config.js" defer></script>
+  <script src="js/supabase-source.js" defer></script>
+  <script src="js/inventory.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <section class="topbar" aria-label="Dealership contact information">
+    <div class="container topbar__inner">
+      <a class="topbar__item" href="https://www.google.com/maps/dir/?api=1&amp;destination=423+N+Franklin+Blvd%2C+Nampa%2C+ID" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>423 N Franklin Blvd, Nampa, Idaho<span class="visually-hidden"> (opens in a new tab)</span></a>
+      <div class="topbar__links">
+        <a href="mailto:bcela@netzero.net"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>bcela@netzero.net</a>
+        <a href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </section>
+
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <picture>
+            <source srcset="images/logo/cela-logo.webp" type="image/webp">
+            <img src="images/logo/cela-logo.png" width="632" height="313" alt="Cela Auto Sales LLC home">
+          </picture>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html" aria-current="page">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--primary header-call" href="tel:+12087131487">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="header-call__short">Call<span class="visually-hidden"> (208) 713-1487</span></span><span class="header-call__full">Call (208) 713-1487</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="nav-toggle__bars"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu__inner">
+        <nav aria-label="Mobile">
+          <ul class="mobile-menu__list">
+            <li><a href="index.html">Home<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            <li><a href="inventory.html" aria-current="page">Inventory<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            <li><a href="about.html">About Us<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            <li><a href="contact.html">Contact<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__actions">
+          <a class="btn btn--primary btn--lg" href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 713-1487</a>
+          <a class="btn btn--dark" href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
+        <p class="mobile-menu__address"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>423 N Franklin Blvd<br>Nampa, Idaho</span></p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Inventory</span></li>
+          </ol>
+        </nav>
+        <h1 id="page-title">Used Vehicle Inventory</h1>
+        <p class="lead">Browse available vehicles from Cela Auto Sales.</p>
+      </div>
+    </section>
+
+    <section class="inventory" data-inventory aria-label="Vehicle search and results">
+      <div class="container inventory-layout">
+
+        <aside class="filters" id="filter-panel" aria-labelledby="filters-title">
+          <div class="filters__header">
+            <h2 class="filters__title" id="filters-title">Filter Vehicles</h2>
+            <button type="button" class="clear-link filters__clear-desktop" data-clear-filters>Clear Filters</button>
+            <button type="button" class="icon-btn filters__close" data-filters-close aria-label="Close filters"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+          </div>
+
+          <form class="filters__body" id="inventory-filters" novalidate>
+            <div class="field">
+              <label class="filter-label" for="filter-make">Make</label>
+              <select class="select" id="filter-make" name="make">
+                <option value="">All Makes</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label class="filter-label" for="filter-model">Model</label>
+              <select class="select" id="filter-model" name="model" disabled>
+                <option value="">All Models</option>
+              </select>
+            </div>
+
+            <fieldset class="filter-group">
+              <legend class="filter-label">Year</legend>
+              <div class="field-pair">
+                <div class="field">
+                  <label class="field-sublabel" for="filter-year-min">From</label>
+                  <select class="select" id="filter-year-min" name="yearMin">
+                    <option value="">Any</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="field-sublabel" for="filter-year-max">To</label>
+                  <select class="select" id="filter-year-max" name="yearMax">
+                    <option value="">Any</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend class="filter-label">Price</legend>
+              <div class="field-pair">
+                <div class="field">
+                  <label class="field-sublabel" for="filter-price-min">Min</label>
+                  <div class="input-affix">
+                    <span class="input-affix__text" aria-hidden="true">$</span>
+                    <input class="input" type="text" id="filter-price-min" name="priceMin" inputmode="numeric" autocomplete="off" placeholder="No min">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-sublabel" for="filter-price-max">Max</label>
+                  <div class="input-affix">
+                    <span class="input-affix__text" aria-hidden="true">$</span>
+                    <input class="input" type="text" id="filter-price-max" name="priceMax" inputmode="numeric" autocomplete="off" placeholder="No max">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="filter-label" for="filter-mileage">Mileage</label>
+              <select class="select" id="filter-mileage" name="mileageMax">
+                <option value="">Any mileage</option>
+                <option value="25000">Up to 25,000 miles</option>
+                <option value="50000">Up to 50,000 miles</option>
+                <option value="75000">Up to 75,000 miles</option>
+                <option value="100000">Up to 100,000 miles</option>
+                <option value="150000">Up to 150,000 miles</option>
+                <option value="200000">Up to 200,000 miles</option>
+              </select>
+            </div>
+
+            <fieldset class="filter-group">
+              <legend class="filter-label">Body Style</legend>
+              <div class="chip-group">
+                <label class="chip"><input type="checkbox" name="body" value="Sedan"><span>Sedan</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="SUV"><span>SUV</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="Truck"><span>Truck</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="Coupe"><span>Coupe</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="Van"><span>Van</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="Wagon"><span>Wagon</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="Convertible"><span>Convertible</span></label>
+                <label class="chip"><input type="checkbox" name="body" value="Other"><span>Other</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="filter-label" for="filter-transmission">Transmission</label>
+              <select class="select" id="filter-transmission" name="transmission">
+                <option value="">Any transmission</option>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <fieldset class="filter-group">
+              <legend class="filter-label">Drivetrain</legend>
+              <div class="chip-group">
+                <label class="chip"><input type="checkbox" name="drivetrain" value="FWD"><span>FWD</span></label>
+                <label class="chip"><input type="checkbox" name="drivetrain" value="RWD"><span>RWD</span></label>
+                <label class="chip"><input type="checkbox" name="drivetrain" value="AWD"><span>AWD</span></label>
+                <label class="chip"><input type="checkbox" name="drivetrain" value="4WD"><span>4WD</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="filter-label" for="filter-fuel">Fuel Type</label>
+              <select class="select" id="filter-fuel" name="fuel">
+                <option value="">Any fuel type</option>
+                <option value="Gasoline">Gasoline</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Electric">Electric</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </form>
+
+          <div class="filters__footer">
+            <button type="button" class="btn btn--dark" data-clear-filters>Clear</button>
+            <button type="button" class="btn btn--primary" data-filters-apply>Show results</button>
+          </div>
+        </aside>
+
+        <div class="inventory-results">
+          <div class="inventory-toolbar">
+            <div class="input-icon" role="search">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <label class="visually-hidden" for="filter-q">Search vehicles</label>
+              <input class="input" type="search" id="filter-q" name="q" form="inventory-filters" placeholder="Make, model, year, keyword" autocomplete="off" enterkeyhint="search">
+            </div>
+            <div class="inventory-toolbar__row">
+              <button type="button" class="btn btn--dark filter-toggle" data-filters-open aria-controls="filter-panel" aria-expanded="false">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>Filters<span class="filter-toggle__count" data-filter-count hidden>0</span>
+              </button>
+              <p class="results-count" data-results-count aria-live="polite">Loading vehicles&hellip;</p>
+              <div class="sort-control">
+                <label for="sort-by">Sort by</label>
+                <select class="select" id="sort-by" name="sort" form="inventory-filters">
+                  <option value="newest">Newest Added</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="mileage-asc">Mileage: Low to High</option>
+                  <option value="year-desc">Year: Newest</option>
+                  <option value="year-asc">Year: Oldest</option>
+                </select>
+              </div>
+            </div>
+            <ul class="active-filters" data-active-filters aria-label="Active filters" hidden></ul>
+          </div>
+
+          <div class="vehicle-grid" data-results>
+            <p class="loading-state js-only">Loading vehicles&hellip;</p>
+            <noscript>
+            <div class="empty-state">
+              <h2>Our inventory is being updated.</h2>
+              <p>Please contact Cela Auto Sales for current vehicle availability.</p>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 713-1487</a>
+                <a class="btn btn--dark" href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+                <a class="btn btn--dark" href="contact.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Contact Us</a>
+              </div>
+            </div>
+          </noscript>
+          </div>
+        </div>
+      </div>
+      <div class="filters-backdrop" data-filters-backdrop hidden></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <picture>
+          <source srcset="images/logo/cela-logo.webp" type="image/webp">
+          <img src="images/logo/cela-logo.png" width="632" height="313" alt="Cela Auto Sales LLC" loading="lazy" decoding="async">
+        </picture>
+        <p>Father-and-son owned and operated in Nampa, Idaho. Reliable used vehicles, personalized service, and a no-pressure buying experience.</p>
+        <a class="social-link" href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Follow us on Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+
+      <nav aria-labelledby="footer-nav-title">
+        <h2 id="footer-nav-title">Navigation</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contact</h2>
+        <ul class="footer-links">
+          <li><a href="tel:+12087131487"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(208) 713-1487</a></li>
+          <li><a href="mailto:bcela@netzero.net"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>bcela@netzero.net</a></li>
+          <li><a href="https://www.facebook.com/people/Cela-Auto-Sales-LLC/61590670534084/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Visit</h2>
+        <address class="footer-address"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Cela Auto Sales LLC<br>423 N Franklin Blvd<br>Nampa, Idaho</span></address>
+        <ul class="footer-links">
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=423+N+Franklin+Blvd%2C+Nampa%2C+ID" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Get Directions<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+        <p>Contact us for current availability and dealership hours.</p>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Cela Auto Sales LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

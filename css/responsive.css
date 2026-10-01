@@ -1,0 +1,391 @@
+/* ==========================================================================
+   Cela Auto Sales LLC — responsive.css
+   Mobile-first enhancements layered on top of styles.css.
+   Breakpoints: 480 (large phones) · 640 (small tablets) · 768 (tablets)
+                960 (desktop navigation) · 1200 (wide desktop)
+   ========================================================================== */
+
+/* Small phones: keep the wide-tracked labels on one line where possible */
+@media (max-width: 399px) {
+  .eyebrow {
+    letter-spacing: 0.16em;
+  }
+
+  /* Hide the visible "Sort by" text; the select keeps its label for screen readers */
+  .sort-control label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+/* Phones: the three small vehicle actions show text only so labels fit */
+@media (max-width: 479px) {
+  .vehicle-actions__row .icon {
+    display: none;
+  }
+}
+
+/* Large phones */
+@media (min-width: 480px) {
+  .btn-group--stack > .btn,
+  .empty-state .btn-group > .btn {
+    flex: 0 1 auto;
+  }
+
+  /* Four contact buttons sit in a tidy 2 × 2 grid */
+  .visit .btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .field-pair {
+    gap: 0.75rem;
+  }
+}
+
+/* Very small phones (320px class) — keep the header from crowding */
+@media (max-width: 359px) {
+  .brand img {
+    height: 38px;
+  }
+
+  .header-call {
+    padding-inline: 0.7rem;
+  }
+
+  .site-header__inner {
+    gap: 0.6rem;
+  }
+
+  .vehicle-actions__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small tablets */
+@media (min-width: 640px) {
+  .tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .key-specs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .feature-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery__thumb {
+    width: 108px;
+  }
+
+  .method {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .method .btn {
+    grid-column: auto;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  :root {
+    --header-h: 72px;
+  }
+
+  .brand img {
+    height: 50px;
+  }
+
+  .header-call__short {
+    display: none;
+  }
+
+  .header-call__full {
+    display: inline;
+  }
+
+  .hero__inner {
+    padding-block: 3rem 4rem;
+  }
+
+  .hero__logo {
+    width: min(60%, 360px);
+  }
+
+  /* Toolbar: count on the left, sort on the right */
+  .results-count {
+    order: 0;
+    flex: 1 1 auto;
+  }
+
+  .sort-control {
+    flex: 0 0 auto;
+  }
+
+  .sort-control .select {
+    min-width: 12rem;
+  }
+
+  .info-strip__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .info-strip__item {
+    padding: 1rem 1.25rem;
+    border-top: 0;
+    border-left: 1px solid var(--color-border);
+  }
+
+  .info-strip__list li:first-child .info-strip__item {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .why__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+
+  .card-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .visit {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  /* Let the map fill the column height beside the contact details */
+  .visit .map-frame {
+    aspect-ratio: auto;
+    min-height: 380px;
+  }
+
+  .spec-table--2col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+
+  .map-frame--wide {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+/* Desktop — full navigation, sidebars, two-column layouts */
+@media (min-width: 960px) {
+  :root {
+    --header-h: 80px;
+  }
+
+  .topbar {
+    display: block;
+  }
+
+  .brand img {
+    height: 56px;
+  }
+
+  .site-nav {
+    display: block;
+  }
+
+  .nav-toggle,
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .header-call {
+    padding-inline: 1.1rem;
+  }
+
+  /* Home hero: copy left, logo right */
+  .hero__inner {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 3rem;
+    min-height: min(640px, calc(100vh - var(--header-h) - 38px - 90px));
+    padding-block: 4.5rem 5rem;
+  }
+
+  .hero__brand {
+    order: 2;
+    padding-bottom: 2.25rem;
+  }
+
+  .hero__logo {
+    width: min(100%, 470px);
+  }
+
+  .why {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .why__intro {
+    position: sticky;
+    top: calc(var(--header-h) + 2rem);
+  }
+
+  .why__list {
+    grid-template-columns: 1fr;
+  }
+
+  .story {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 4rem;
+  }
+
+  .story--reverse .lockup {
+    order: 2;
+  }
+
+  .split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+
+  /* Inventory: filter sidebar */
+  .inventory-layout {
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  /* Full-height sidebar (no inner scrolling, so every filter stays discoverable) */
+  .filters {
+    position: static;
+    z-index: auto;
+    width: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: none;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+
+  .filters__close,
+  .filters__footer,
+  .filter-toggle,
+  .filters-backdrop {
+    display: none !important;
+  }
+
+  .filters__clear-desktop {
+    display: inline-flex;
+  }
+
+  .filters__body {
+    overflow: visible;
+  }
+
+  .inventory-results .vehicle-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  }
+
+  /* Vehicle detail: gallery + sticky summary */
+  .vehicle-layout {
+    grid-template-columns: minmax(0, 1.55fr) minmax(320px, 1fr);
+    grid-template-areas:
+      "gallery summary"
+      "details summary";
+    gap: 2rem 2.5rem;
+  }
+
+  .vehicle-layout .gallery { grid-area: gallery; }
+  .vehicle-layout .vehicle-summary {
+    grid-area: summary;
+    position: sticky;
+    top: calc(var(--header-h) + 1rem);
+    align-self: start;
+  }
+  .vehicle-layout .vehicle-details { grid-area: details; }
+
+  .key-specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mobile-cta {
+    display: none;
+  }
+
+  body.has-mobile-cta {
+    padding-bottom: 0;
+  }
+
+  .lightbox__inner {
+    padding: 4rem 5rem;
+  }
+
+  .lightbox .gallery__nav--prev { left: 1.25rem; }
+  .lightbox .gallery__nav--next { right: 1.25rem; }
+}
+
+/* Wide desktop */
+@media (min-width: 1200px) {
+  .tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  .card-grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Print: keep it readable and ink-friendly */
+@media print {
+  .topbar,
+  .site-header,
+  .site-footer,
+  .filters,
+  .inventory-toolbar,
+  .mobile-cta,
+  .gallery__nav,
+  .gallery__expand,
+  .vehicle-actions {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  h1,
+  h2,
+  h3,
+  .vehicle-summary__price,
+  .spec-table dd,
+  .key-specs dd {
+    color: #000000;
+  }
+}
